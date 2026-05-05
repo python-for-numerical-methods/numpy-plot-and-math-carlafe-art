@@ -21,7 +21,7 @@ def normalized_array(data):
     max_val = np.max(data)
 
     if max_val == min_val:
-        return np.zeros_like(arr, dtype=float)
+        return np.zeros_like(data, dtype=float)
 
     return (data - min_val) / (max_val - min_val)
     # חשוב לזכור להחליף את pass ב- return
